@@ -1,0 +1,22 @@
+.table-container {
+    width: 100vw;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.body-row-green {
+    background-color: green;
+}
+
+.body-row-red {
+    background-color: red;
+}
+
+.delete-column:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
