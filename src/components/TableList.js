@@ -49,7 +49,7 @@ function TableList() {
                             <th>{data?.description?.substring(3, 14)}...</th>
                             <th>{changeFormat(data?.publishAt)}</th>
                             <th>{changeFormat(data?.createdAt)}</th>
-                            <th className={data?.removedAt ? ' ' : 'delete-column'} onClick={() => handleDeteteRow(data?.uuid, data?.removedAt)}>Delete</th>
+                            <th className={data?.removedAt ? ' ' : 'delete-column'} onClick={() => handleDeteteRow(data?.uuid, data?.removedAt)}>{data?.removedAt ? 'Deleted' : 'Delete'}</th>
                         </tr>
                     ))}
                 </tbody>
