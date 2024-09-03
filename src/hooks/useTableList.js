@@ -18,8 +18,6 @@ function useTableList() {
             uuid: uuid
         });
 
-        console.log('uuid', typeof uuid)
-
         let response = await fetch('http://ec2-63-34-145-237.eu-west-1.compute.amazonaws.com/msc/stream', {
             method: 'DELETE',
             headers: {
